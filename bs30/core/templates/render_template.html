@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SING UP</title>
+</head>
+
+<body style="background-image: url(https://source.unsplash.com/1600x900/?sea);">
+
+    <!-- component -->
+    <div class="container signup">
+        <div class="min-h-screen flex mb-4 row-signup">
+            <div class="w-3/5 h-12 row-right">
+
+                <div class="text-dig">
+                    <p class="w-full text-base sm:text-lg md:text-xl text-center lg:text-2xl xl:text-5xl" style="color: black;margin-top: 150px;">
+                        <t style="color: orange;">Join the millions</t><br><b style="color: whitesmoke;">Indian developers</b><br>
+                        <t style="color: green;">to meet with CoqDig</t>
+                    </p>
+                </div>
+            </div>
+            <div class="form-signup-dig">
+                <div class="w-full max-w-xs">
+
+                    <form class="max-w-md mb-4 form-input" style="margin-top: 150px;" method="post">{% csrf_token %}
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
+                                      Username
+                                    </label>
+                            <input class="shadow appearance-none border rounded w-full h-12 py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" name="name" placeholder="Username" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
+                                      Email
+                                    </label>
+                            <input class="shadow appearance-none border border rounded h-12 w-full py-2 px-3 text-grey-darker mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="email" name="email" placeholder="email" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
+                                          Password
+                                        </label>
+                            <input class="shadow appearance-none border border rounded w-full h-12 py-2 px-3 text-grey-darker mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" name="password" placeholder="******************" required>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <input class="bg-blue hover:bg-blue-dark text-white font-bold w-full h-12 py-2 px-4  rounded focus:outline-none focus:shadow-outline" type="submit" value="signup" style="color: green;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
