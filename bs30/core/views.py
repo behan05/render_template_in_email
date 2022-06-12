@@ -7,6 +7,7 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 # Create your views here.
 
+
 def signup(request):
     if request.method == 'POST':
         nm = request.POST.get('name')

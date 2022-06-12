@@ -123,11 +123,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST ='smtp.gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_PORT = 587
-EMAIL_HOST_USER = '#' # here type your email address which is used by django to send the mail to another.
-EMAIL_HOST_PASSWORD = '#' # here type your app password
+# here type your email address which is used by django to send the mail to another.
+EMAIL_HOST_USER = '#'
+EMAIL_HOST_PASSWORD = '#'  # here type your app password
 EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # this field is required, when you want to render html template in email via django.
-
-
+# this field is required, when you want to render html template in email via django.
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
